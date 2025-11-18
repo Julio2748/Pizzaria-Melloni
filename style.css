@@ -1,0 +1,436 @@
+        body {
+            background-color: #fefae0;
+        }
+
+
+        .lista-ancoras {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            font-family: "Pompiere", sans-serif;
+            font-size: 25px;
+
+        }
+
+        .lista-ancoras li a {
+            text-decoration: none;
+            background-color: darkred;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .lista-ancoras li a:hover {
+            background-color: #a52a2a;
+        }
+
+        .banner-natal {
+            background: linear-gradient(to right, green, red);
+            color: white;
+            font-family: "Pompiere", sans-serif;
+            font-size: 35px;
+            text-align: center;
+            padding: 15px 0;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 12px;
+            border: 3px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+            /* ANIMAÇÃO */
+            animation: brilhoNatal 2.5s infinite ease-in-out;
+        }
+
+        @keyframes brilhoNatal {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+                transform: scale(1);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+                transform: scale(1.03);
+            }
+
+            100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+                transform: scale(1);
+            }
+        }
+
+
+
+        p {
+            font-size: 45px;
+        }
+
+
+
+
+
+
+
+
+
+        nav {
+            background-color: darkred;
+            color: white;
+            font-family: "Pompiere", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            /* Centraliza os itens na barra de navegação */
+            align-items: center;
+            height: 30px;
+            width: 100%;
+        }
+
+
+
+
+
+
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 200px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .cima {
+
+            margin-top: -30px;
+            padding: 0;
+        }
+
+
+
+
+        .h2 {
+
+            color: red;
+
+        }
+
+
+
+        .galeria {
+
+            display: flex;
+            flex-direction: row;
+            gap: clamp(20px, 5vw, 60px);
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            background-color: white;
+            font-family: "Pompiere", sans-serif;
+            font-weight: 400px;
+            font-size: 20px;
+            font-style: normal;
+            border: 4px solid darkred;
+            border-radius: 3px;
+            margin-bottom: 60px;
+
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 200px;
+            flex-grow: 0;
+            text-align: center;
+            margin-top: 60px;
+            flex: 1 1 250px;
+            /* faz os itens crescerem ou encolherem sem quebrar */
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            max-width: 80%;
+            /* limite máximo da imagem */
+            height: auto;
+            /* mantém proporção correta */
+        }
+
+        .item h2 {
+            font-size: clamp(1.4rem, 2vw, 2rem);
+            /* aumenta conforme a tela */
+        }
+
+
+
+
+
+
+        .itemimg {
+            width: 100%;
+            height: auto;
+        }
+
+
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 1em;
+        }
+
+
+        h2 {
+            font-family: "Pompiere", sans-serif;
+            font-weight: 500px;
+            font-style: normal;
+            font-size: 55px;
+        }
+
+        .img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+
+
+
+
+
+        header {
+            height: auto;
+
+            padding: 15px 0;
+
+            text-align: center;
+
+            margin-top: 20px;
+            margin-bottom: 0;
+            background-color: darkred;
+            color: white;
+            font-family: "Pompiere", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+            padding: 0 20px;
+            /* Para dar um espaçamento nas laterais */
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header ul li {
+            margin-right: 20px;
+        }
+
+        header ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header ul li a:hover {
+            text-decoration: underline;
+            /* Para quando passar o mouse */
+        }
+
+
+
+
+
+        table {
+
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+
+            border: 3px solid darkred;
+            /* borda externa */
+            border-radius: 10px;
+            /* cantos arredondados */
+            border-collapse: separate;
+            /* permite radius funcionar */
+            border-spacing: 0;
+            /* remove espaços */
+            
+        }
+
+
+        .emoji-lista {
+            list-style: decimal;
+            font-family: "Pompiere", sans-serif;
+            padding: 0;
+            text-align: center;
+
+        }
+
+        .emoji-lista {
+            list-style: none;
+            font-family: "Pompiere", sans-serif;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            counter-reset: pizza-counter;
+        }
+
+        .emoji-lista li {
+            font-size: 22px;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .emoji-lista li::before {
+            content: counter(pizza-counter) " 🍕 ";
+            counter-increment: pizza-counter;
+
+        }
+
+        .formulario {
+            position: relative;
+            width: 90%;
+            max-width: 600px;
+            margin-top: 20px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: white;
+            border: 3px solid darkred;
+            border-radius: 10px;
+            font-family: "Pompiere", sans-serif;
+            overflow: hidden;
+             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);      }   
+
+        .coluna {
+            display: flex;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        .texto {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: darkred;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: "Pompiere", sans-serif;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: darkred;
+        }
+
+        input[type="text"]::placeholder {
+            color: #999;
+        }
+
+        .marcacao {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .label-marcacao {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .label-marcacao input[type="checkbox"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .enviar {
+            background-color: darkred;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "Pompiere", sans-serif;
+            transition: background-color 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .enviar:hover {
+            background-color: #a52a2a;
+        }
+
+        @media print {
+
+            nav,
+            header,
+            .banner-natal,
+            .lista-ancoras {
+                display: none;
+            }
+        }
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        input[type="text"] {
+            font-size: 1rem;
+        }
+
+        .formulario {
+            border: none;
+            box-shadow: none;
+            width: 100%;
+        }
